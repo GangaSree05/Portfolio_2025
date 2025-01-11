@@ -33,12 +33,12 @@ section{
 .heading{
     font-size: 4rem;
     padding-bottom: 1rem;
-    color: var(--main-color);
+    color: #111;
     text-transform: uppercase;
 }
 .heading span{
     color: var(--main-color);
-    color: var(--main-color);
+    color: #111;
     text-transform: uppercase;
 }
 .btn{
@@ -116,7 +116,7 @@ header .navbar a:hover{
 }
 .home .content h3{
     font-size: 4.5rem;
-    color: var(--main-color);
+    color: #111;
     text-transform: uppercase;
 }
 .home .content h3 span{
@@ -166,4 +166,75 @@ header .navbar a:hover{
     gap: 1.5rem;
     padding: 0.5rem 0;
 }
+.about .row-1 .content .box-container .box{
+    flex: 1 1 20rem;
+}
+.about .row-1 .content .box-container .box span{
+    color: var(--main-color);
+}
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.service .box-container .box{
+    flex:1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: .5rem 1re, rgba(0,0,0,.1);
+}
+.service .box-container .box h3{
+    color: #444;
+    font-size: 2.2rem;
+    padding-top: 1rem;
+}
+.service .box-container .box p{
+    color: #666;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+.service .box-container .box img{
+    flex: 1 1 40rem;
+    width: 100%;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row form{
+    flex:1 1 55rem;
+    background: #fff;
+    padding: 0 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.contact .row form .box,
+.contact .row form textarea{
+    width:100%;
+    border-radius: 1rem solid #333;
+    color: #333;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color: var(--main-color);
+}
+.contact .row form .box:placeholder,
+.contact .row form textarea:placeholder{
+    text-transform: capitalize;
 
+}
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+}
+.service .box img{
+    width: 10px;
+    height:200px;
+} 
